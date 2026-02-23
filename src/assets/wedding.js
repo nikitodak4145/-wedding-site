@@ -2,11 +2,8 @@
 // ВСЯ ЛОГИКА ДЛЯ САЙТА АННЫ САНЬКО
 // ============================================
 
-// --- ОБЪЯВЛЯЕМ КОНСТАНТУ ДЛЯ ЭКСПОРТА ---
-const weddingUtils = {};
-
 // 1. АНИМАЦИЯ СЧЁТЧИКОВ (success-stats)
-function animateStats() {
+export function animateStats() {
   const stats = document.querySelectorAll('.stat-number');
   
   stats.forEach(stat => {
@@ -28,7 +25,7 @@ function animateStats() {
 }
 
 // 2. LAZY LOAD ДЛЯ ИЗОБРАЖЕНИЙ
-function initLazyLoading() {
+export function initLazyLoading() {
   const lazyImages = document.querySelectorAll('.lazy-image');
   
   if ('IntersectionObserver' in window) {
@@ -61,7 +58,7 @@ function initLazyLoading() {
 }
 
 // 3. АНИМАЦИЯ ПОЯВЛЕНИЯ ЭЛЕМЕНТОВ (fade-in)
-function initFadeAnimation() {
+export function initFadeAnimation() {
   const fadeElements = document.querySelectorAll('.fade-in');
   
   const fadeObserver = new IntersectionObserver((entries) => {
@@ -77,7 +74,7 @@ function initFadeAnimation() {
 }
 
 // 4. ПЛАВНАЯ ПРОКРУТКА К ЯКОРЯМ (anchor links)
-function initSmoothScroll() {
+export function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -102,7 +99,7 @@ function initSmoothScroll() {
 }
 
 // 5. СЕРДЕЧКО С УВЕДОМЛЕНИЯМИ (wedding-heart)
-function initWeddingHeart() {
+export function initWeddingHeart() {
   const heart = document.getElementById('weddingHeart');
   
   if (!heart) return;
@@ -144,7 +141,7 @@ function initWeddingHeart() {
 }
 
 // 6. ПЕРЕКЛЮЧАТЕЛЬ ТЕМ (dark/light)
-function initThemeToggle() {
+export function initThemeToggle() {
   const themeToggle = document.getElementById('themeToggle');
   
   if (!themeToggle) return;
@@ -169,7 +166,7 @@ function initThemeToggle() {
 }
 
 // 7. ФУНКЦИЯ ДЛЯ КОПИРОВАНИЯ ТЕКСТА (для страницы контактов)
-function setupCopyButton() {
+export function setupCopyButton() {
   const copyBtn = document.getElementById('copyBtn');
   
   if (!copyBtn) return;
@@ -205,7 +202,7 @@ function setupCopyButton() {
 }
 
 // 8. УВЕДОМЛЕНИЯ (для копирования и других событий)
-function showNotification(message) {
+export function showNotification(message) {
   const notification = document.createElement('div');
   notification.style.cssText = `
     position: fixed;
@@ -232,7 +229,7 @@ function showNotification(message) {
 }
 
 // 9. ИНИЦИАЛИЗАЦИЯ ВСЕГО ПРИ ЗАГРУЗКЕ СТРАНИЦЫ
-function initAll() {
+export function initAll() {
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
       initLazyLoading();
@@ -277,17 +274,3 @@ function initAll() {
     }
   }
 }
-
-// --- НАПОЛНЯЕМ ОБЪЕКТ ФУНКЦИЯМИ ---
-weddingUtils.initAll = initAll;
-weddingUtils.animateStats = animateStats;
-weddingUtils.initLazyLoading = initLazyLoading;
-weddingUtils.initFadeAnimation = initFadeAnimation;
-weddingUtils.initSmoothScroll = initSmoothScroll;
-weddingUtils.initWeddingHeart = initWeddingHeart;
-weddingUtils.initThemeToggle = initThemeToggle;
-weddingUtils.setupCopyButton = setupCopyButton;
-weddingUtils.showNotification = showNotification;
-
-// --- ПРАВИЛЬНЫЙ ЭКСПОРТ ---
-export default weddingUtils;
