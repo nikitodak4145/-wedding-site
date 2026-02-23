@@ -980,3 +980,55 @@ body > div:first-child,
     margin-top: 20px !important;
   }
 }
+/* ===== ТВОЯ РЕКЛАМА В ФУТЕРЕ ===== */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-promo {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 25px;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+}
+
+.promo-text {
+  color: #ffd700;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.promo-link {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+
+.promo-link:hover {
+  color: white;
+  border-bottom-color: #ffd700;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-promo {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

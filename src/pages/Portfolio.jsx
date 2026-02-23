@@ -220,7 +220,7 @@ function Portfolio() {
           </div>
           
           <p style={{ color: '#888', fontSize: '14px' }}>
-            © 2026 Анна Санько. Свадебный организатор. Все права защищены.
+           © 2026 by <a href='https://my-django-blog.vercel.app/'></a>. Все права защищены. 
           </p>
         </div>
       </footer>

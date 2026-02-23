@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/wedding.css';
 import '../assets/music.js';
+import Footer from '../components/Footer';
 
 function Home() {
   
@@ -179,27 +180,7 @@ function Home() {
       </section>
 
       {/* ФУТЕР */}
-      <footer className="footer">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <h4>Anna Sanko Wedding Planner</h4>
-              <p>Я за уникальную историю любви</p>
-              <p>Услуги по планированию свадеб</p>
-            </div>
-            <div className="col-md-6 text-md-end">
-              <p>
-                <a href="https://instagram.com/anna_sanko_wedding" target="_blank" rel="noopener noreferrer" style={{ color: '#e6c8a0', textDecoration: 'none' }}>
-                  <i className="fab fa-instagram"></i> @anna_sanko_wedding
-                </a>
-              </p>
-              <p style={{ color: '#aaa', marginTop: '20px' }}>
-                © 2026 Анна Санько. Все права защищены.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+    <Footer />
     </div>
   );
 }

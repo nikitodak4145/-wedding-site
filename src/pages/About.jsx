@@ -82,7 +82,7 @@ function About() {
                 </a>
               </p>
               <p style={{ color: '#aaa', marginTop: '20px' }}>
-                © 2026 Анна Санько. Все права защищены.
+                © 2026 by <a href='https://my-django-blog.vercel.app/'></a>. Все права защищены. 
               </p>
             </div>
           </div>
