@@ -3,6 +3,7 @@
 // ============================================
 
 // 1. АНИМАЦИЯ СЧЁТЧИКОВ (success-stats)
+
 export function animateStats() {
   const stats = document.querySelectorAll('.stat-number');
   
@@ -282,7 +283,7 @@ export function initAll() {
 }
 
 // Экспортируем всё для использования в компонентах
-export default {
+export default weddingUtils; {
   initAll,
   animateStats,
   initLazyLoading,
@@ -293,3 +294,4 @@ export default {
   setupCopyButton,
   showNotification
 };
+
