@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../styles/wedding.css';
 import { initLazyLoading, initFadeAnimation } from '../assets/wedding';
+import Footer from '../components/Footer';
 
 function Contact() {
   useEffect(() => {
@@ -249,33 +250,14 @@ function Contact() {
         <a href="/" className="btn-back">
           <i className="fas fa-arrow-left me-2"></i> Вернуться на главную
         </a>
+        
       </div>
+       <a href="https://instagram.com/anna_sanko_wedding" target="_blank" className="btn btn-instagram" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i> @anna_sanko_wedding
+            </a>
 
       {/* ФУТЕР */}
-      <footer className="footer">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <h4>Anna Sanko Wedding Planner</h4>
-              <p>Я за уникальную историю любви</p>
-              <p>Услуги по планированию свадеб</p>
-            </div>
-            <div className="col-md-6 text-md-end">
-              <p>
-                <a href="https://instagram.com/anna_sanko_wedding" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   style={{ color: '#e6c8a0', textDecoration: 'none' }}>
-                   <i className="fab fa-instagram"></i> @anna_sanko_wedding
-                </a>
-              </p>
-              <p style={{ color: '#aaa', marginTop: '20px' }}>
-                © 2026 by <a href='https://my-django-blog.vercel.app/'></a>. Все права защищены. 
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+<Footer />
     </div>
   );
 }

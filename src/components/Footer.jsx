@@ -5,6 +5,7 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
+          {/* Информация о свадебном организаторе */}
           <div className="footer-info">
             <h4>Anna Sanko Wedding Planner</h4>
             <p>Я за уникальную историю любви</p>
@@ -17,7 +18,7 @@ function Footer() {
                Сайт разработан <strong>Никитой</strong>
             </p>
             <a 
-              href="https://my-django-blog.vercel.app/" 
+              href="https://my-django-blog.vercel.app" 
               target="_blank" 
               rel="noopener noreferrer"
               className="promo-link"
@@ -26,6 +27,7 @@ function Footer() {
             </a>
           </div>
 
+          {/* Ссылка на Instagram */}
           <div className="footer-social">
             <a 
               href="https://instagram.com/anna_sanko_wedding" 
@@ -37,8 +39,9 @@ function Footer() {
           </div>
         </div>
 
+        {/* Копирайт с твоей ссылкой */}
         <p className="copyright">
-          © 2026  Все права защищены.
+          © 2026 by <a href="https://my-django-blog.vercel.app" target="_blank" rel="noopener noreferrer">Никита</a>. Все права защищены.
         </p>
       </div>
     </footer>

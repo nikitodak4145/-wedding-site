@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../styles/wedding.css';
 import { initLazyLoading, initFadeAnimation, animateStats } from '../assets/wedding';
+import Footer from '../components/Footer';
 
 function Portfolio() {
     
@@ -184,7 +185,7 @@ function Portfolio() {
              target="_blank" 
              className="btn-instagram"
              rel="noopener noreferrer">
-            <span style={{ marginRight: '8px' }}>📷</span> Больше фото в Instagram
+            <span style={{ marginRight: '8px' }}></span> Больше фото в Instagram
           </a>
         </div>
 
@@ -197,33 +198,7 @@ function Portfolio() {
       </main>
 
       {/* ФУТЕР */}
-      <footer className="footer">
-        <div>
-          <h4>Anna Sanko Wedding Planner</h4>
-          <p style={{ color: '#aaa', margin: '15px 0' }}>Я за уникальную историю любви</p>
-          <div className="navbar-nav ms-auto">
-            <a className="nav-link" href="/">Главная</a>
-            <a className="nav-link" href="/services">Услуги</a>
-            <a className="nav-link" href="/about">Обо мне</a>
-            <a className="nav-link active" href="/portfolio">Портфолио</a>
-            <a className="nav-link" href="/contact">Контакты</a>
-          </div>
-
-          <div style={{ margin: '25px 0' }}>
-            <a href="https://instagram.com/anna_sanko_wedding" 
-               target="_blank" 
-               className="footer-link"
-               rel="noopener noreferrer"
-               style={{ fontSize: '16px' }}>
-              <span style={{ marginRight: '5px' }}>📱</span> @anna_sanko_wedding
-            </a>
-          </div>
-          
-          <p style={{ color: '#888', fontSize: '14px' }}>
-           © 2026 by <a href='https://my-django-blog.vercel.app/'></a>. Все права защищены. 
-          </p>
-        </div>
-      </footer>
+  <Footer />
     </div>
   );
 }
