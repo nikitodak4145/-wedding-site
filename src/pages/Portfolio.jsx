@@ -173,26 +173,7 @@ function Portfolio() {
           </div>
         </div>
 
-        {/* СТАТИСТИКА */}
-        <div className="success-stats">
-          <div className="stat-item">
-            <div className="stat-number" data-count="125">125+</div>
-            <div className="stat-label">Успешных свадеб</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number" data-count="250">250+</div>
-            <div className="stat-label">Довольных пар</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number" data-count="5">5</div>
-            <div className="stat-label">Лет опыта</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number" data-count="99">99%</div>
-            <div className="stat-label">рекомендаций</div>
-          </div>
-        </div>
-
+        
         {/* ПРИЗЫВ К ДЕЙСТВИЮ */}
         <div style={{ textAlign: 'center', padding: '60px 20px', background: '#f8f9fa', marginTop: '40px' }}>
           <h3 style={{ color: '#d4a5a5', marginBottom: '20px', fontSize: '28px' }}>Хотите такую же свадьбу?</h3>
