@@ -18,7 +18,7 @@ function Footer() {
                Сайт разработан <strong>Никитой</strong>
             </p>
             <a 
-              href="https://my-django-blog.vercel.app" 
+              href="https://portfolio-2bad.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="promo-link"
@@ -41,7 +41,7 @@ function Footer() {
 
         {/* Копирайт с твоей ссылкой */}
         <p className="copyright">
-          © 2026 by <a href="https://my-django-blog.vercel.app" target="_blank" rel="noopener noreferrer">Никита</a>. Все права защищены.
+          © 2026 by <a href="https://portfolio-2bad.vercel.app/" target="_blank" rel="noopener noreferrer">NK</a>. Все права защищены.
         </p>
       </div>
     </footer>
