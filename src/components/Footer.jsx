@@ -18,7 +18,7 @@ function Footer() {
                Сайт разработан <strong>Никитой</strong>
             </p>
             <a 
-              href="https://portfolio-2bad.vercel.app/" 
+              href="https://portfolio-bdeb.vercel.app/projects" 
               target="_blank" 
               rel="noopener noreferrer"
               className="promo-link"
@@ -30,7 +30,7 @@ function Footer() {
           {/* Ссылка на Instagram */}
           <div className="footer-social">
             <a 
-              href="wedding-site-v69i.vercel.app/" 
+              href="https://wedding-site-zz3w.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -41,7 +41,7 @@ function Footer() {
 
         {/* Копирайт с твоей ссылкой */}
         <p className="copyright">
-          © 2026 by <a href="wedding-site-v69i.vercel.app/" target="_blank" rel="noopener noreferrer">NK</a>. Все права защищены.
+          © 2026 by <a href="https://portfolio-bdeb.vercel.app/projects" target="_blank" rel="noopener noreferrer">NK</a>. Все права защищены.
         </p>
       </div>
     </footer>
