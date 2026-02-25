@@ -176,19 +176,7 @@ function Portfolio() {
 
         
         {/* ПРИЗЫВ К ДЕЙСТВИЮ */}
-        <div style={{ textAlign: 'center', padding: '60px 20px', background: '#f8f9fa', marginTop: '40px' }}>
-          <h3 style={{ color: '#d4a5a5', marginBottom: '20px', fontSize: '28px' }}>Хотите такую же свадьбу?</h3>
-          <p style={{ fontSize: '18px', color: '#666', maxWidth: '600px', margin: '0 auto 30px' }}>
-            Посмотрите больше моих работ в Instagram и напишите для консультации
-          </p>
-          <a href="https://instagram.com/anna_sanko_wedding" 
-             target="_blank" 
-             className="btn-instagram"
-             rel="noopener noreferrer">
-            <span style={{ marginRight: '8px' }}></span> Больше фото в Instagram
-          </a>
-        </div>
-
+     
         {/* КНОПКА НАЗАД */}
         <div style={{ textAlign: 'center', margin: '40px 0' }}>
           <a href="/" className="btn-back">

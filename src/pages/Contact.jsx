@@ -252,9 +252,7 @@ function Contact() {
         </a>
         
       </div>
-       <a href="https://instagram.com/anna_sanko_wedding" target="_blank" className="btn btn-instagram" rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i> @anna_sanko_wedding
-            </a>
+     
 
       {/* ФУТЕР */}
 <Footer />
