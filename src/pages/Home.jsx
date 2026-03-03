@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/wedding.css';
 import '../assets/music.js';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 function Home() {
   
@@ -13,12 +14,12 @@ function Home() {
           <a className="navbar-brand" href="/">
             <i className="fas fa-heart" style={{ color: '#d4a5a5' }}></i> ANNA SANKO
           </a>
-          <div className="navbar-nav ms-auto">
-            <a className="nav-link active" href="/">Главная</a>
-            <a className="nav-link" href="/services">Услуги</a>
-            <a className="nav-link" href="/about">Обо мне</a>
-            <a className="nav-link" href="/portfolio">Портфолио</a>
-            <a className="nav-link" href="/contact">Контакты</a>
+         <div className="navbar-nav ms-auto">
+            <Link to  ="/" className="nav-link active">Главная</Link>
+            <Link to  ="/services" className="nav-link">Услуги</Link>
+            <Link to  ="/about" className="nav-link">Обо мне</Link>
+            <Link to  ="/portfolio" className="nav-link">Портфолио</Link>
+            <Link to  ="/contact" className="nav-link">Контакты</Link>
           </div>
         </div>
       </nav>

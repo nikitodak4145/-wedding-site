@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../styles/wedding.css';
 import { initLazyLoading, initFadeAnimation, animateStats } from '../assets/wedding';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 function Portfolio() {
     
@@ -39,20 +40,20 @@ function Portfolio() {
   return (
     <div>
       {/* НАВИГАЦИЯ */}
-      <nav className="navbar">
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-          <a href="/" className="navbar-brand">
-            <span style={{ color: '#d4a5a5' }}>❤</span> ANNA SANKO
-          </a>
-          <div className="nav-links">
-            <a href="/" className="nav-link">Главная</a>
-            <a href="/services" className="nav-link">Услуги</a>
-            <a href="/about" className="nav-link">Обо мне</a>
-            <a href="/portfolio" className="nav-link active">Портфолио</a>
-            <a href="/contact" className="nav-link">Контакты</a>
-          </div>
-        </div>
-      </nav>
+   <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+           <div className="container">
+             <a className="navbar-brand" href="/">
+               <i className="fas fa-heart" style={{ color: '#d4a5a5' }}></i> ANNA SANKO
+             </a>
+          <div className="navbar-nav ms-auto">
+               <Link to  ="/" className="nav-link">Главная</Link>
+               <Link to  ="/services" className="nav-link">Услуги</Link>
+               <Link to  ="/about" className="nav-link">Обо мне</Link>
+               <Link to  ="/portfolio" className="nav-link active">Портфолио</Link>
+               <Link to  ="/contact" className="nav-link ">Контакты</Link>
+             </div>
+           </div>
+         </nav>
 
       {/* ЗАГОЛОВОК ПОРТФОЛИО */}
       <section className="portfolio-header fade-in">
